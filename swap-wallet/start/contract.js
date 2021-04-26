@@ -31,13 +31,13 @@ The `piggybankContract` is compiled from:
 */
 
 const forwarderOrigin = 'http://localhost:9010'
-//Basic Actions Section
+
+const initialize = () => {
+  //Basic Actions Section
+
 const onboardButton = document.getElementById('connectButton');
 const getAccountsButton = document.getElementById('getAccounts');
 const getAccountsResult = document.getElementById('getAccountsResult');
-const initialize = () => {
-  //Basic Actions Section
-  const onboardButton = document.getElementById('connectButton');
 
   //Created check function to see if the MetaMask extension is installed
   const isMetaMaskInstalled = () => {
